@@ -61,4 +61,4 @@ function remove_comments($src,$css_mode=false)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 $js_content=file_get_contents('test.js');
-echo htmlentities(remove_comments($js_content));
+echo nl2br(htmlentities(remove_comments($js_content)));
